@@ -98,3 +98,247 @@
 
         .updated {
             color: var(--soft);
+            margin-bottom: 0;
+        }
+
+        section {
+            padding: 24px;
+            background: var(--panel);
+            border: 1px solid var(--panel-border);
+            border-radius: 14px;
+            margin-top: 14px;
+        }
+
+        strong {
+            color: var(--text);
+        }
+
+        .notice {
+            border-color: rgba(255, 138, 43, 0.34);
+            background: rgba(255, 138, 43, 0.10);
+        }
+
+        .footer {
+            color: var(--soft);
+            font-size: 14px;
+            margin-top: 18px;
+            text-align: center;
+        }
+
+        @media (max-width: 620px) {
+            main {
+                width: min(100% - 22px, 940px);
+                padding: 18px 0 36px;
+            }
+
+            header, section {
+                padding: 18px;
+                border-radius: 12px;
+            }
+
+            p, li {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <p class="eyebrow">xMag</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated"><strong>Last updated:</strong> May 29, 2026</p>
+    </header>
+
+    <section class="notice">
+        <h2>Important Safety Notice</h2>
+        <p>
+            xMag is an earthquake monitoring and analysis app that interprets public earthquake catalog data.
+            It is not an official earthquake alert system, earthquake prediction service, safety advice, or
+            emergency service. For emergency instructions and official warnings, follow your local and national
+            authorities.
+        </p>
+    </section>
+
+    <section>
+        <h2>Overview</h2>
+        <p>
+            xMag is designed to work without creating an account. The app shows live earthquake data, maps,
+            location-based context, saved locations, saved earthquakes, optional push notifications, premium
+            features, and advertising for non-premium users.
+        </p>
+        <p>
+            Most personal app data, such as saved earthquakes, saved locations, filters, map preferences, and
+            premium entitlement status, is stored locally on your device. Some data is sent to Apple, Google,
+            or the xMag notification service when those features are used, as described below.
+        </p>
+    </section>
+
+    <section>
+        <h2>Information You Provide or Enable</h2>
+        <ul>
+            <li>
+                <strong>Location:</strong> If you grant location permission, xMag may use your device location
+                to sort earthquakes by distance, show nearby events, calculate approximate fault proximity, and
+                provide location-based analysis. Location access is optional.
+            </li>
+            <li>
+                <strong>Saved locations:</strong> If you save places in the app, their names, coordinates, and
+                filter settings are stored locally on your device.
+            </li>
+            <li>
+                <strong>Saved earthquakes:</strong> If you bookmark earthquakes, those records are stored
+                locally on your device so you can return to them later.
+            </li>
+            <li>
+                <strong>Notification preferences:</strong> If you enable earthquake push notifications, xMag
+                stores your notification settings, magnitude filters, quiet hours, and optional near-me alert
+                location settings.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Push Notifications</h2>
+        <p>
+            xMag uses Apple Push Notification service (APNs) and an xMag notification backend hosted on
+            Cloudflare Workers to deliver optional earthquake notifications.
+        </p>
+        <p>
+            When notifications are enabled, the app may send the notification backend your APNs device token,
+            generated device identifier, app version, build number, locale, notification preferences, magnitude
+            thresholds, quiet hours, time zone offset, and, if near-me alerts are enabled, latitude and longitude
+            used for matching nearby earthquake events.
+        </p>
+        <p>
+            This information is used to register your device, apply your notification preferences, send
+            earthquake notifications, avoid duplicate delivery, troubleshoot delivery errors, and disable
+            inactive tokens. You can disable notifications in the app or in iOS Settings.
+        </p>
+    </section>
+
+    <section>
+        <h2>Location Data</h2>
+        <p>
+            xMag uses location only when you grant permission or choose location-based features. The app may
+            use location locally to calculate distance from earthquakes, show nearby events, estimate whether
+            an event may be relevant to your location, and calculate approximate distance to mapped fault data.
+        </p>
+        <p>
+            If near-me push notifications are enabled, latitude and longitude may be sent to the xMag
+            notification backend so it can match earthquake events against your selected radius and magnitude
+            settings. If near-me notifications are disabled, location is not needed for that notification
+            matching.
+        </p>
+    </section>
+
+    <section>
+        <h2>Advertising</h2>
+        <p>
+            xMag uses Google AdMob to show ads to non-premium users. Google and its advertising partners may
+            process information such as device identifiers, advertising identifiers when available, IP-derived
+            approximate location, ad interactions, diagnostic information, and consent choices to provide,
+            measure, limit, and improve advertising.
+        </p>
+        <p>
+            Saved earthquakes, saved locations, and local app settings are not shared by xMag with Google for
+            third-party advertising. Premium users may see fewer or no ads depending on the current premium
+            feature set.
+        </p>
+        <p>
+            You can learn more about Google's use of information from apps that use its services at
+            <a href="https://policies.google.com/technologies/partner-sites">Google's partner technologies policy</a>
+            and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+        </p>
+    </section>
+
+    <section>
+        <h2>Purchases</h2>
+        <p>
+            xMag uses Apple's StoreKit system for in-app purchases. Payment processing is handled by Apple.
+            xMag does not receive your full payment card details. The app may store local premium entitlement
+            status so premium features can be unlocked after purchase or restore.
+        </p>
+        <p>
+            Terms for the app are provided through Apple's standard licensed application end user license
+            agreement unless a custom license is separately published:
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>.
+        </p>
+    </section>
+
+    <section>
+        <h2>Earthquake Data and Third-Party Sources</h2>
+        <p>
+            xMag reads public earthquake and map-related data from third-party sources such as USGS, EMSC, GEM,
+            and local bundled datasets used for city, fault, map, or earthquake context. These sources provide
+            earthquake catalog or reference data. xMag does not control the privacy practices, availability, or
+            accuracy of those third-party data providers.
+        </p>
+    </section>
+
+    <section>
+        <h2>Information We Do Not Require</h2>
+        <p>
+            xMag does not require you to create an account. We do not ask for your name, email address, phone
+            number, contacts, photos, camera access, microphone access, health data, or financial account
+            details.
+        </p>
+    </section>
+
+    <section>
+        <h2>Data Retention and Deletion</h2>
+        <p>
+            Data stored locally by xMag remains on your device unless you delete it in the app where available,
+            reset related settings, or uninstall the app. Uninstalling the app generally removes locally stored
+            app data from the device.
+        </p>
+        <p>
+            Notification backend records may remain for as long as needed to provide notifications, maintain
+            delivery logs, troubleshoot delivery errors, and prevent duplicate delivery. Disabling notifications
+            or deleting the app prevents future notification registration updates from the app. Apple purchase
+            records are managed by Apple according to Apple's policies.
+        </p>
+    </section>
+
+    <section>
+        <h2>Your Choices</h2>
+        <ul>
+            <li>You can enable or disable location permission in iOS Settings.</li>
+            <li>You can enable or disable push notifications in the app or in iOS Settings.</li>
+            <li>You can reset or limit advertising identifiers through iOS privacy settings where available.</li>
+            <li>You can delete saved earthquakes or saved locations in the app where those controls are available.</li>
+            <li>You can uninstall the app to remove local app data from your device.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Children's Privacy</h2>
+        <p>
+            xMag is a general earthquake monitoring and information app. It is not directed to children, and we
+            do not knowingly collect personal information from children.
+        </p>
+    </section>
+
+    <section>
+        <h2>Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy when xMag changes or when legal, platform, technical, or App Store
+            requirements change. The updated version will be posted on this page with a new "Last updated" date.
+        </p>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>
+            If you have questions about this Privacy Policy or xMag's privacy practices, please contact us
+            through the support contact provided on the App Store product page.
+        </p>
+    </section>
+
+    <p class="footer">
+        <a href="https://gomlek.github.io/">Gomlek</a> |
+        <a href="https://apps.apple.com/cy/app/earthquake-xmag/id1672743993">xMag on the App Store</a>
+    </p>
+</main>
+</body>
+</html>
