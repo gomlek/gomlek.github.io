@@ -1,526 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
-    <link rel="icon" type="image/png" href="./img/6.png" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tamer Bayramogullari — iOS Apps</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="description"
+      content="iOS uygulamaları: deprem takibi, meditasyon, kitap yönetimi, bütçe ve daha fazlası. Tamer Bayramogullari tarafından geliştirildi."
     />
-    <title>Gomlek</title>
+    <meta property="og:title" content="Tamer Bayramogullari — iOS Apps" />
+    <meta
+      property="og:description"
+      content="Hayatınızı kolaylaştıran iOS uygulamaları — App Store'da keşfedin."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gomlek.github.io/" />
+    <link rel="icon" type="image/png" href="./img/6.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header id="main" class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a class="header__logo" href="#main"></a>
-          <div class="form">
-            <button class="form__button"></button>
-            <input
-              class="form__input"
-              type="search"
-              placeholder="Search items and collections"
-            />
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#">Gomlek</a>
+        <nav class="nav">
+          <a href="#apps" data-i18n="navApps">Uygulamalar</a>
+          <a href="#contact" data-i18n="navContact">İletişim</a>
+          <a href="privacy-tr.html" data-i18n="navPrivacy">Gizlilik</a>
+          <a
+            class="nav__cta"
+            href="https://apps.apple.com/tr/developer/tamer-bayramogullari/id963571955"
+            target="_blank"
+            rel="noopener"
+            data-i18n="navAppStore"
+            >App Store</a
+          >
+          <div class="lang-toggle">
+            <button type="button" data-lang-btn="tr" class="active">TR</button>
+            <button type="button" data-lang-btn="en">EN</button>
           </div>
-
-          <nav class="nav">
-            <ul class="header-menu__list">
-              <li class="header-menu__item">
-                <a href="#OnBrain" class="header-menu__link">OnBrain</a>
-              </li>
-              <li class="header-menu__item">
-                <a href="#baccal" class="header-menu__link">baccal</a>
-              </li>
-              <li class="header-menu__item">
-                <a href="#PrivacyPolicy" class="header-menu__link">Privacy</a>
-              </li>
-              <li class="header-menu__item">
-                <a href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank" class="header-menu__link header-button"
-                  >App Store</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
+        </nav>
       </div>
     </header>
 
-    <section class="section">
-      <div class="container">
-        <div class="gallery__inner">
-          <div class="gallery__info">
-            <h1 class="gallery__title">
-              Meet and  <br />
-              Download our<br />
-              Applications
-            </h1>
-            <p class="gallery__desc">
-              Our applications in various categories <br />
-              aim to make your life easier. <br />
-                <br />
-                <br />
-               
-            </p>
-            <a class="gallery__btn gallery__btn-active" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank"
-              >Explore Now</a
+    <main>
+      <section class="hero">
+        <div class="container">
+          <span class="hero__badge" data-i18n="heroBadge">iOS Geliştirici</span>
+          <h1 class="hero__title" data-i18n="heroTitle">Tamer Bayramogullari</h1>
+          <p class="hero__subtitle" data-i18n="heroSubtitle">
+            Deprem takibi, meditasyon, kitap yönetimi ve daha fazlası — hayatınızı
+            kolaylaştıran iOS uygulamaları.
+          </p>
+          <div class="hero__actions">
+            <a
+              class="btn btn--primary"
+              href="https://apps.apple.com/tr/developer/tamer-bayramogullari/id963571955"
+              target="_blank"
+              rel="noopener"
+              data-i18n="heroCta"
+              >App Store'da Keşfet</a
             >
-            <a class="gallery__btn" href="#eQuake" target="_blank">eQuake</a>
-            <a class="gallery__btn" href="#Kitaplarim" target="_blank">Kitaplarım</a>
-            <ul class="gallery__list">
-              <li class="gallery__item">
-            </ul>
-          </div>
-          <div class="gallery__img">
-            <img class="gallery__img-img" src="./img/collage.png" alt="" />
+            <span class="hero__stat" data-i18n="heroApps">15 uygulama</span>
           </div>
         </div>
-        <div class="company">
-          <ul class="company__list">
-            <li class="company__list-item">
-              <a href="" target="_blank" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/1.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="company__list-item">
-              <a href="" target="_blank" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/2.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="company__list-item">
-              <a href="" target="_blank" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/3.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="company__list-item">
-              <a href="" target="_blank" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/4.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="company__list-item">
-              <a href="" target="_blank" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/5.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="company__list-item">
-              <a href="" target="_blank" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/6.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="company__list-item">
-              <a href="" target="_blank" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/7.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="company__list-item">
-              <a href="" target="_blank" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/8.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="company__list-item">
-              <a href="" target="_blank" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/9.png"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="company__list-item">
-              <a href="" class="company__item-link">
-                <img
-                  class="company__item-img"
-                  src="./img/10.png"
-                  alt=""
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="baccal" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">baccal</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/baccal.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">baccal</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" data-i18n="featuredTitle">Öne Çıkanlar</h2>
           </div>
+          <div id="featured-grid" class="grid grid--featured"></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="NOIST" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">NOIST</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/NOIST.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">NOIST</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
+      <section id="apps" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" data-i18n="appsTitle">Tüm Uygulamalar</h2>
+            <span id="apps-count" class="section__count"></span>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="moodzen" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">moodZEN</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/moodZEN.png" alt="" />
+          <div class="toolbar">
+            <div class="search">
+              <input
+                id="search"
+                type="search"
+                data-i18n-placeholder="searchPlaceholder"
+                placeholder="Uygulama ara…"
+                autocomplete="off"
+              />
             </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">moodZEN</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
+            <div id="genre-filters" class="filters"></div>
           </div>
+          <div id="apps-grid" class="grid"></div>
         </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer__inner">
+        <div class="footer__links">
+          <a href="mailto:bayramogullari@me.com" data-i18n="footerContact"
+            >İletişim</a
+          >
+          <a href="privacy-tr.html" data-i18n="footerPrivacy">Gizlilik Politikası</a>
+          <a href="scientific_studies.html" data-i18n="footerStudies"
+            >Bilimsel Çalışmalar</a
+          >
+          <a
+            href="https://apps.apple.com/tr/developer/tamer-bayramogullari/id963571955"
+            target="_blank"
+            rel="noopener"
+            >App Store</a
+          >
+        </div>
+        <p class="footer__copy">
+          © <span id="year"></span> Tamer Bayramogullari —
+          <span data-i18n="footerRights">Tüm hakları saklıdır.</span>
+        </p>
       </div>
-    </section>
+    </footer>
 
-    <section id="OnBrain" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">OnBrain</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/OnBrain.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">OnBrain</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="eQuake" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">eQuake</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/eQuake.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">eQuake</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Kitaplarim" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">Kitaplarım</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/Kitaplarim.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">Kitaplarım</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="BooksMy" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">BooksMy</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/BooksMy.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">BooksMy</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="SoccerX" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">SoccerX</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/SoccerX.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">SoccerX</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="babyMy" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">babyMy</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/babyMy.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">babyMy</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="xBudget" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">xBudget</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/xbudget.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">xBudget</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="xMag" class="section__card">
-      <div class="container">
-        <div class="card__title">
-          <h2 class="card__title-text">xMag</h2>
-          <p class="card__title-desc">
-          </p>
-        </div>
-
-        <div class="card__inner">
-          <div class="card__item">
-            <div class="card__img">
-              <img class="card__img-img" src="./img/xmag.png" alt="" />
-            </div>
-            <div class="card__info">
-              <div class="info__left">
-                <p class="card__nick">App Name</p>
-                <p class="card__name">xMag</p>
-              </div>
-              <div class="info__right">
-                <p class="info__current">Price</p>
-                <p class="info__price">Free</p>
-              </div>
-            </div>
-            <a class="card__btn-link" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="PrivacyPolicy" class="section__card"></section>
-    <div class="banner__section">
-      <div class="container">
-        <div class="banner__inner">
-          <h3 class="banner__title">
-            PRIVACY POLICY <br />
-            Our App is not save, store, or share any information about you.  <br />
-            Privacy - Use location to determine distance to earthquake <br />
-            This policy may be edited and / or updated without  <br />
-            prior notice to you, subject to changing conditions. <br />
-            Therefore, we recommend that you review the privacy policy at each visit.  <br />
-            This document was last updated on 01.04.2023  <br />
-            For questions, bayramogullari@me.com
-          </h3>
-          <a class="banner__btn" href="https://apps.apple.com/cy/developer/tamer-bayramogullari/id963571955" target="_blank">App Store</a>
-        </div>
-      </div>
-    </div>
-    <script src="./js/script.js"></script>
-    </section>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

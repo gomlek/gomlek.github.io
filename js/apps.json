@@ -1,0 +1,277 @@
+[
+  {
+    "id": "1254966117",
+    "name": "Ancient Pin",
+    "shortName": "Ancient Pin",
+    "genre": "Reference",
+    "url": "https://apps.apple.com/us/app/ancient-pin/id1254966117",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/b4/2d/78/b42d789f-7e2a-19f2-8c1c-03bbe91e7c51/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/40/88/60/4088600e-4785-d4a0-bf30-226a5e95cd32/mzl.wgyhozke.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/40/90/69/409069ce-d2be-dcb9-339d-8295cb972409/mzl.nqawhbza.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/81/ce/8d/81ce8d69-f8db-ab62-5911-93f0f96fe80a/mzl.aouoaheb.png/392x696bb.png"
+    ],
+    "price": "$2.99",
+    "privacy": null,
+    "description": {
+      "en": "Immerse yourself in the awe-inspiring and mythical wonders of the ancient world, exploring breathtaking historical sites and their precise locations collecte...",
+      "tr": "Immerse yourself in the awe-inspiring and mythical wonders of the ancient world, exploring breathtaking historical sites and their precise locations collecte..."
+    }
+  },
+  {
+    "id": "1322877018",
+    "name": "DataX Earthquake",
+    "shortName": "DataX Earthquake",
+    "genre": "Reference",
+    "url": "https://apps.apple.com/us/app/datax-earthquake/id1322877018",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ea/01/4a/ea014a3a-6e7e-cf7a-94c4-8407f8a0782a/AppIcon-1x_U007ephone-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/b6/23/02/b6230225-a024-f883-1a16-4e1b46378a38/b2dd47a3-54e6-4fee-afe9-5c671a4f285c_Simulator_Screenshot_-_iPhone_8_Plus_-_2023-06-14_at_16.51.06.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/d3/86/98/d38698a1-9555-9663-f10e-56225e9b3274/d662c707-3f36-46fd-8b92-e5558b898211_Simulator_Screenshot_-_iPhone_8_Plus_-_2023-06-14_at_16.51.43.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/72/67/0f/72670f17-888d-6677-2983-e486c95dd622/5eb3948b-79af-4eb8-b296-e8b09e1a8b19_Simulator_Screenshot_-_iPhone_8_Plus_-_2023-06-14_at_16.52.16.png/392x696bb.png"
+    ],
+    "price": "$3.99",
+    "privacy": null,
+    "description": {
+      "en": "- Advanced filtering: The app enables users to visualize all seismic activities worldwide on a map, utilizing advanced filtering capabilities. - Active fault...",
+      "tr": "- Advanced filtering: The app enables users to visualize all seismic activities worldwide on a map, utilizing advanced filtering capabilities. - Active fault..."
+    }
+  },
+  {
+    "id": "1502904706",
+    "name": "Earthquake Maps - eQuake",
+    "shortName": "eQuake",
+    "genre": "Reference",
+    "url": "https://apps.apple.com/us/app/earthquake-maps-equake/id1502904706",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/99/0f/e7/990fe75e-01b1-6920-9b51-6a19a00a4184/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/dd/66/68/dd6668e8-dce2-6c2a-7fe2-687da39f1fee/cd253a5d-121b-4b0b-8847-41f48d3771e9___B1.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/6c/14/60/6c146083-56e4-8237-2a39-cacd16fa380a/9bb4083b-9cad-4be2-97cc-133ed82b7236___B2.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/3e/fd/f4/3efdf4de-417e-33a9-6b4b-75f30b79ca11/5f3b8a54-f93c-4ec0-a7fb-ddd313a6271f___B3.png/392x696bb.png"
+    ],
+    "price": "Free",
+    "privacy": "privacy-equake.html",
+    "description": {
+      "en": "eQuake is a modern earthquake tracking app built to make seismic activity easier to follow, easier to understand, and more meaningful at a glance.",
+      "tr": "eQuake is a modern earthquake tracking app built to make seismic activity easier to follow, easier to understand, and more meaningful at a glance."
+    }
+  },
+  {
+    "id": "1672743993",
+    "name": "Earthquake xMag",
+    "shortName": "xMag",
+    "genre": "Reference",
+    "url": "https://apps.apple.com/us/app/earthquake-xmag/id1672743993",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c3/f9/86/c3f9864e-546b-3597-a14a-bf40d341b0c2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshots": [],
+    "price": "Free",
+    "privacy": "privacy-xmag.html",
+    "description": {
+      "en": "xMag turns live USGS and EMSC earthquake data into clear, personal information for you — so you understand what an earthquake means for you, not just its mag...",
+      "tr": "xMag turns live USGS and EMSC earthquake data into clear, personal information for you — so you understand what an earthquake means for you, not just its mag..."
+    }
+  },
+  {
+    "id": "6447549396",
+    "name": "Budget Manager - xBudget Lite",
+    "shortName": "xBudget Lite",
+    "genre": "Lifestyle",
+    "url": "https://apps.apple.com/us/app/budget-manager-xbudget-lite/id6447549396",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/bd/97/2a/bd972a50-712f-a6f6-348b-382aa2ea28c7/AppIcon-0-1x_U007ephone-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/fc/36/d8/fc36d893-2ae0-b55e-2c9f-a1f2a2191514/f76e9acc-75a7-4a30-bb75-94b0a289391e_a.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/49/4e/71/494e71e8-8567-cb25-2ef6-5d6801a7114c/8ed18579-3044-4b46-b5b6-a75bf3de81f7_b.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/21/63/85/2163857f-e0d5-e3b9-3ef5-d62335b2b0fc/949f71e2-695c-4c07-87b4-a2541ce203c9_c.png/392x696bb.png"
+    ],
+    "price": "Free",
+    "privacy": null,
+    "description": {
+      "en": "The easiest way to manage personal finances. Add, Remove, and Customize Categories.  Generate reports, graphs. Upgrade to full version for less ads.",
+      "tr": "The easiest way to manage personal finances. Add, Remove, and Customize Categories.  Generate reports, graphs. Upgrade to full version for less ads."
+    }
+  },
+  {
+    "id": "6446173381",
+    "name": "Budget Manager xBudget",
+    "shortName": "xBudget",
+    "genre": "Lifestyle",
+    "url": "https://apps.apple.com/us/app/budget-manager-xbudget/id6446173381",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/2b/39/c1/2b39c132-fedd-8103-06ba-b95d525fcbc4/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/df/7b/e2/df7be27e-7f9a-09aa-6e33-501856d7e07b/68c8ef67-23b2-4722-8fdf-3a52c16bf783_Simulator_Screen_Shot_-_iPhone_8_Plus_-_2023-03-14_at_18.53.18.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/3e/41/d8/3e41d80b-fc4c-ca38-3cb5-13af9ff3e5c5/77157471-6e12-4765-aa8a-887416767a41_Simulator_Screen_Shot_-_iPhone_8_Plus_-_2023-03-14_at_18.57.08.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/5a/c5/cd/5ac5cd90-e9c3-bbfa-11be-ddf9b6f52ea7/91f1aea0-932c-417d-9126-92b1500444b4_Simulator_Screen_Shot_-_iPhone_8_Plus_-_2023-03-14_at_19.04.15.png/392x696bb.png"
+    ],
+    "price": "$0.99",
+    "privacy": null,
+    "description": {
+      "en": "The easiest way to manage personal finances. Add, Remove, and Customize Categories.  Generate reports, graphs.\"",
+      "tr": "\"The easiest way to manage personal finances. Add, Remove, and Customize Categories.  Generate reports, graphs.\""
+    }
+  },
+  {
+    "id": "6480364917",
+    "name": "Meditation - moodZEN",
+    "shortName": "moodZEN",
+    "genre": "Lifestyle",
+    "url": "https://apps.apple.com/us/app/meditation-moodzen/id6480364917",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/76/c9/6176c912-3e19-bcab-5fcd-329bc7765664/AppIcon-0-0-1x_U007ephone-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b3/6b/ff/b36bff01-e332-9a37-d632-76a53dd69f81/af19ba0f-8fbd-4808-a110-3f9ff1b53d85_8en1.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/0a/ad/ff0aad9f-0a84-9fc6-f4b5-41d254f3d433/e7a24777-c044-42ba-baee-ee463c60472a_8en2.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/e6/96/a8e6962c-8a10-58ff-7353-1a0da7f0a720/dc7af5df-c16f-4b2e-b421-1c9c1cb3d07d_8en3.png/392x696bb.png"
+    ],
+    "price": "Free",
+    "privacy": "privacy-moodzen.html",
+    "description": {
+      "en": "Anyone may practice meditation; here's how. Contrary to popular belief, meditation is both easier and more difficult. Set a timer, read these instructions, a...",
+      "tr": "Anyone may practice meditation; here's how. Contrary to popular belief, meditation is both easier and more difficult. Set a timer, read these instructions, a..."
+    }
+  },
+  {
+    "id": "6499426904",
+    "name": "White Noise - NOIST",
+    "shortName": "NOIST",
+    "genre": "Lifestyle",
+    "url": "https://apps.apple.com/us/app/white-noise-noist/id6499426904",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/ec/28/c2ec2892-024e-2104-444a-802260521caf/AppIcon-0-0-1x_U007ephone-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/29/46/53294603-1c68-a6c0-b085-66d9d6852af7/06897b72-cfd9-4ba6-93de-c3f31b575577_CON8a.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/12/36/c0/1236c0ed-c5ca-bc9a-3089-f0c4cd6b9921/43334023-99ae-402a-a328-4529b208aa44_CON8b.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a4/f4/38/a4f43848-f620-2c08-a448-0b04431721ed/db06c8a2-2d03-4fa8-ae83-86d10fe8b39d_CON8c.png/392x696bb.png"
+    ],
+    "price": "Free",
+    "privacy": "privacy-noist.html",
+    "description": {
+      "en": "White noise can block unwelcome or distracting noises while you are trying to sleep, and it may even help to quiet a cacophony of anxiety-inducing thoughts i...",
+      "tr": "White noise can block unwelcome or distracting noises while you are trying to sleep, and it may even help to quiet a cacophony of anxiety-inducing thoughts i..."
+    }
+  },
+  {
+    "id": "1504857982",
+    "name": "Kitaplarım",
+    "shortName": "Kitaplarım",
+    "genre": "Book",
+    "url": "https://apps.apple.com/us/app/kitaplar%C4%B1m/id1504857982",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7d/f2/f8/7df2f8de-75e7-aafd-9b22-e5af0c4a7c0d/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/ae/92/2a/ae922a5b-b622-c902-1692-781dae4739a0/pr_source.jpg/392x696bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/2c/c3/3d/2cc33dbc-5334-dfcc-d6e6-3f389a614c5f/pr_source.jpg/392x696bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/7c/a5/74/7ca574f3-ec36-1b67-ab79-ee00a6a5e91e/pr_source.jpg/392x696bb.jpg"
+    ],
+    "price": "Free",
+    "privacy": "privacy-kitaplarim.html",
+    "description": {
+      "en": "Kitaplarım ile kişisel kütüphanenizi düzenli, zarif ve pratik bir şekilde yönetin.",
+      "tr": "Kitaplarım ile kişisel kütüphanenizi düzenli, zarif ve pratik bir şekilde yönetin."
+    }
+  },
+  {
+    "id": "1506407437",
+    "name": "My books - BooksMy",
+    "shortName": "BooksMy",
+    "genre": "Book",
+    "url": "https://apps.apple.com/us/app/my-books-booksmy/id1506407437",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/7c/5c/207c5c6c-157d-abaf-952c-ae93003b1e30/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/a5/e2/09/a5e20921-8e4f-de54-0ae3-d59d100c1dd3/pr_source.jpg/392x696bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/2a/c1/ce/2ac1ceca-0145-320f-edb6-22f6d95efa58/pr_source.jpg/392x696bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/6c/f6/8f/6cf68f2d-7809-8974-4145-e662b219a0ed/pr_source.jpg/392x696bb.jpg"
+    ],
+    "price": "Free",
+    "privacy": "privacy-booksmy.html",
+    "description": {
+      "en": "Keep every book you own, want to read, and have finished organized in one place. Add books in seconds by scanning a barcode, searching by title or author, or...",
+      "tr": "Keep every book you own, want to read, and have finished organized in one place. Add books in seconds by scanning a barcode, searching by title or author, or..."
+    }
+  },
+  {
+    "id": "6447378210",
+    "name": "Baby Translator - babyMy",
+    "shortName": "babyMy",
+    "genre": "Entertainment",
+    "url": "https://apps.apple.com/us/app/baby-translator-babymy/id6447378210",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/1d/15/e81d1531-82ec-91f4-2b83-fc8ec4c49f79/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+    "screenshots": [],
+    "price": "Free",
+    "privacy": "privacy-babymy.html",
+    "description": {
+      "en": "* White noise sounds: The app offers a curated selection of white noise sounds to help your baby sleep more deeply and peacefully. * Baby voice conversion: T...",
+      "tr": "* White noise sounds: The app offers a curated selection of white noise sounds to help your baby sleep more deeply and peacefully. * Baby voice conversion: T..."
+    }
+  },
+  {
+    "id": "6478599818",
+    "name": "OnBrain - Sleep, Relax, Focus",
+    "shortName": "OnBrain",
+    "genre": "Music",
+    "url": "https://apps.apple.com/us/app/onbrain-sleep-relax-focus/id6478599818",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b2/0a/6e/b20a6ef3-1a80-23d7-7399-4b035f6e9201/AppIcon-0-0-1x_U007ephone-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/b5/0a/31/b50a312d-aaf3-25ec-9016-48260ae93a6a/d3025813-7fb1-45f3-b0d1-10af019cf49d_S3raw_55_A.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/42/24/73/42247324-181b-b690-0aec-11a2f592d785/eb9ced12-c781-43dc-a6f3-044bb75a1f72_S2raw_55_a.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/43/e8/e9/43e8e9cd-bdba-b1d1-1c64-267dd4f049da/6012c39d-9c52-4507-949d-029adbcd6bc9_S1raw_55_a.png/392x696bb.png"
+    ],
+    "price": "Free",
+    "privacy": "privacy-onbrain.html",
+    "description": {
+      "en": "Scientific research showing that listening to binaural beats might alter brainwave patterns to promote particular mental states served as the foundation for ...",
+      "tr": "Scientific research showing that listening to binaural beats might alter brainwave patterns to promote particular mental states served as the foundation for ..."
+    }
+  },
+  {
+    "id": "1502220385",
+    "name": "Football Predictions, SoccerX",
+    "shortName": "SoccerX",
+    "genre": "Sports",
+    "url": "https://apps.apple.com/us/app/football-predictions-soccerx/id1502220385",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/ce/45/ce/ce45cea9-6ea7-4f3c-aac6-8c62c6b8042d/AppIcon-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/d7/2a/b7/d72ab749-6b67-6052-c9c8-716c98d0f0db/b64629c4-fe5c-4b3a-8770-394d8bd4d5d7_Simulator_Screenshot_-_iPhone_8_Plus_-_2023-04-16_at_13.07.30.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/ec/49/e5/ec49e50e-b8e1-0ab4-1355-e323c4a0f7eb/5fd8a3c8-0886-4e5c-b911-4baad8352931_Simulator_Screenshot_-_iPhone_8_Plus_-_2023-04-16_at_13.07.23.png/392x696bb.png"
+    ],
+    "price": "Free",
+    "privacy": null,
+    "description": {
+      "en": "This app provide MATHEMATICAL PROBABILITIES.",
+      "tr": "This app provide MATHEMATICAL PROBABILITIES."
+    }
+  },
+  {
+    "id": "1498737404",
+    "name": "iWord",
+    "shortName": "iWord",
+    "genre": "Games",
+    "url": "https://apps.apple.com/us/app/iword/id1498737404",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/f4/6e/bb/f46ebbf1-860d-a126-a39e-3ae6af2fbeed/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/97/00/44/9700442a-f77c-dd58-d0c5-dedd5a6d6f18/pr_source.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/f7/04/b8/f704b8fc-98e1-9e76-db30-83b1d5d24736/pr_source.png/392x696bb.png"
+    ],
+    "price": "Free",
+    "privacy": null,
+    "description": {
+      "en": "Touch, move and combine letters to discover as many words as possible.  Easy-to-understand mechanics.",
+      "tr": "Touch, move and combine letters to discover as many words as possible.  Easy-to-understand mechanics."
+    }
+  },
+  {
+    "id": "1476959870",
+    "name": "Dietbook",
+    "shortName": "Dietbook",
+    "genre": "Food & Drink",
+    "url": "https://apps.apple.com/us/app/dietbook/id1476959870",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/2e/bf/4d2ebf4e-08c1-6146-cee1-90edf246e799/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/a9/b4/ee/a9b4ee12-03af-7ed5-87ff-a94d5f189fab/pr_source.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/4c/f3/6a/4cf36a1c-cced-0485-db49-82e40576859b/pr_source.png/392x696bb.png",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/4d/1f/6a/4d1f6a28-e9c9-8c62-a9dd-c5a7fcb38c30/pr_source.png/392x696bb.png"
+    ],
+    "price": "Free",
+    "privacy": null,
+    "description": {
+      "en": "Tüm ulusal marketlerde satılan onbinlerce yiyecek ve içecek Tüm zincir restoranlardaki onbinlerce yiyecek ve içecek Gıda üretimi yapan markaların onbinlerce ...",
+      "tr": "Tüm ulusal marketlerde satılan onbinlerce yiyecek ve içecek Tüm zincir restoranlardaki onbinlerce yiyecek ve içecek Gıda üretimi yapan markaların onbinlerce ..."
+    }
+  }
+]
