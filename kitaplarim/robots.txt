@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /kitaplarim/
+
+Sitemap: https://gomlek.github.io/kitaplarim/sitemap.xml
