@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Frequently asked questions — BooksMy</title>
+  <meta name="description" content="Answers about BooksMy iCloud backup, changing devices, restoring Pro, the 10-book limit, CSV, Goodreads, and deleting data.">
+  <meta name="apple-itunes-app" content="app-id=1506407437">
+  <link rel="canonical" href="https://gomlek.github.io/booksmy/faq/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="BooksMy">
+  <meta property="og:title" content="Frequently asked questions — BooksMy">
+  <meta property="og:description" content="Answers about BooksMy iCloud backup, changing devices, restoring Pro, the 10-book limit, CSV, Goodreads, and deleting data.">
+  <meta property="og:url" content="https://gomlek.github.io/booksmy/faq/">
+  <meta property="og:image" content="https://gomlek.github.io/booksmy/assets/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="BooksMy app icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="../"><img src="../assets/icon.png" width="36" height="36" alt="">BooksMy</a>
+    <nav aria-label="Main navigation"><a href="../faq/" aria-current="page">FAQ</a><a href="../support/">Support</a></nav>
+  </header>
+  <main id="content" class="wrap" tabindex="-1">
+    <header class="page-intro">
+      <p class="eyebrow">BooksMy guide</p>
+      <h1>Frequently asked questions</h1>
+      <p class="lede">What you need to know when moving your library, making backups, and restoring Pro.</p>
+      <nav class="jump-links" aria-label="On this page"><a href="#backup">iCloud backup</a><a href="#pro">Pro</a><a href="#csv">CSV and Goodreads</a><a href="#delete-data">Deleting data</a></nav>
+    </header>
+    <div class="article">
+      <section id="backup"><h2>How do I make a backup</h2>
+        <p>Use <strong>Settings › Back Up and Restore › Back Up Now</strong>. You need to be signed in to iCloud on your device.</p>
+        <p>The “Backup created” message means the copy is ready; uploading to iCloud can take time. A dashed cloud icon shows the upload isn’t finished. Wait for the upload to finish before you change devices.</p>
+        <p>Under Backup Frequency you can choose Daily, Weekly, or Off. The default is Daily. Automatic backup needs iCloud and Background App Refresh; iOS decides when it runs. A new backup from the same installation replaces the previous copy; a separate archive isn’t kept for every day.</p>
+      </section>
+      <section id="restore"><h2>How do I restore my backup</h2>
+        <p>In Settings › Back Up and Restore, tap the backup in the Restore section. Check the device name and date, then confirm. If the backup is in the cloud, it has to be downloaded first.</p>
+        <p class="callout"><strong>The backup you choose replaces your current library; libraries are not merged.</strong> Before restoring, make sure your current library also has a usable backup.</p>
+        <p>The app makes a safety copy of your existing data before the operation. If the copy can’t be made, the restore doesn’t start. For a backup made in a newer version, update the app. If you see an error saying the safety copy was kept, close the app and reopen it; if the problem continues, <a href="../support/">write to support</a> without deleting the app.</p>
+      </section>
+      <section id="new-device"><h2>How do I move to a new iPhone</h2>
+        <ol><li>On the old device, use Back Up Now and check that the upload to iCloud has finished.</li><li>On the new device, sign in with the same iCloud account that holds the backup and open BooksMy.</li><li>On first launch you may see a “Backup Found” suggestion. If not, choose the old device’s backup in Settings › Back Up and Restore.</li></ol>
+        <p>The backup list may give priority to the same device’s backup; check the device name and date. BooksMy doesn’t sync the libraries of two devices live. Keep your old device until you’re sure you can see your books and notes on the new one.</p>
+      </section>
+      <section id="pro"><h2>Is Pro a one-time purchase? How do I restore it</h2>
+        <p>Yes. Lifetime Pro is a one-time purchase; it removes the ads and the 10-book total limit in the free add-book flow. You don’t need to pay again for the same entitlement you bought before.</p>
+        <p>Use <strong>Settings › Pro features › Restore Purchases</strong>. Sign in with the Apple Account you used to buy Pro on the App Store and check your internet connection. This is not a new purchase.</p>
+        <p><strong>Restoring purchases doesn’t bring back your library.</strong> Restore your iCloud backup separately for your books. If Pro doesn’t appear, check your account without paying again and <a href="../support/">write to support</a>.</p>
+      </section>
+      <section id="book-limit"><h2>How does the 10-book limit in the free version work</h2>
+        <p>The limit applies to adding new books from the BooksMy › + menu. When the total reaches 10, adding a new book from this menu needs Pro, or you can choose to watch a short ad to add a book (up to 5 a day). Records in Reading, To Read, and Finished are counted; books in Did Not Finish are included in this total.</p>
+        <p><strong>Your existing books are never locked.</strong> The limit doesn’t delete your books or block access to the books you already have. Pro removes this limit.</p>
+      </section>
+      <section id="csv"><h2>Can I move my books with CSV</h2>
+        <p>Yes. In <strong>Settings › Import / Export</strong> you can export your books to a file with Export CSV, and choose a suitable file with Import CSV. When importing, check the BooksMy CSV format and Format Details.</p>
+        <p>In the import preview you can review rows that match existing books and rows that are invalid. An invalid row doesn’t change your existing book. CSV is for moving books; to back up your whole library, use the iCloud backup path.</p>
+      </section>
+      <section id="goodreads"><h2>Can I import my Goodreads books</h2>
+        <p>You can import the CSV export you created from Goodreads by choosing the Goodreads format on the Import CSV screen.</p>
+        <p>The Goodreads export doesn’t include reading start dates. For finished books, the start and end dates are imported as the Goodreads reading date. Cover images aren’t downloaded in a Goodreads import.</p>
+      </section>
+      <section id="delete-data"><h2>What happens to my backups and Pro if I delete my data</h2>
+        <p>Deleting all data on the Settings › Import / Export screen deletes the library data on this device, including books, lists, notes, quotes, reading sessions, and goal progress. It can’t be undone; make sure you have a usable backup first.</p>
+        <p><strong>This does not delete your iCloud backups or your Pro entitlement.</strong> Turning off automatic backup doesn’t delete existing backups either. However, a new backup from the same installation replaces the previous copy; don’t refresh the backup you want to keep with an empty library.</p>
+        <p>To delete the backup in the cloud, in Settings › Back Up and Restore swipe left on the backup and choose Delete › Delete iCloud Backup. This also deletes the cloud backup and can’t be undone. Remove Backup Copy from Device removes only the downloaded copy; the iCloud backup stays. You need to manage exported files separately.</p>
+      </section>
+      <section id="ads"><h2>Are ads shown</h2>
+        <p>In the free version a Google AdMob app-open ad may be shown. At the 10-book limit you can choose to watch a rewarded ad to add a book (up to 5 a day); it opens only when you ask for it. Banner and interstitial ads are currently off. Pro blocks ad requests and display.</p>
+        <p>Pro does not mean that no request is ever made to Google’s consent service or that the ad SDK is never started. You can find data processing details in the <a href="../privacy/">privacy policy</a>.</p>
+      </section>
+      <section id="contact"><h2>How do I get in touch</h2>
+        <p>You can write to <a href="mailto:lezzet@gmail.com">lezzet@gmail.com</a> or use Settings › General › Support in the app. BooksMy is a one-person project; replies can take a while.</p>
+        <p>Say what you were doing when the problem occurred, the error message, and your app and iOS versions. There is more information on the <a href="../support/">Support page</a>.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer wrap">
+    <nav class="footer-links" aria-label="Other pages"><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../support/#release-notes">Release notes</a></nav>
+    <p>BooksMy · Your personal reading journal. · Looking for Turkish? <a href="https://gomlek.github.io/kitaplarim/">Kitaplarım</a></p>
+  </footer>
+</body>
+</html>

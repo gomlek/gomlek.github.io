@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /booksmy/
+
+Sitemap: https://gomlek.github.io/booksmy/sitemap.xml
