@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <title>Paylaşılan okuma listesi — Kitaplarım</title>
+  <meta name="description" content="Kitaplarım ile paylaşılan bir okuma listesi. Listeyi burada gör, Kitaplarım uygulamasında tek dokunuşla listene ekle.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="apple-itunes-app" content="app-id=1504857982">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Kitaplarım">
+  <meta property="og:title" content="Paylaşılan okuma listesi — Kitaplarım">
+  <meta property="og:description" content="Bir okuma listesi seninle paylaşıldı. Kitaplarım uygulamasında tek dokunuşla listene ekle.">
+  <meta property="og:url" content="https://gomlek.github.io/kitaplarim/liste/">
+  <meta property="og:image" content="https://gomlek.github.io/kitaplarim/assets/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="Kitaplarım uygulama simgesi">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    .shared-note { margin: 0 0 1rem; color: var(--muted); }
+    .shared-deadline { font-weight: 600; }
+    .work-list { list-style: none; padding: 0; margin: 1.5rem 0; }
+    .work { display: grid; grid-template-columns: 48px 1fr; gap: .25rem 1rem; align-items: start; padding: 1rem 0; border-top: 1px solid var(--line); }
+    .work:last-child { border-bottom: 1px solid var(--line); }
+    .work-cover { width: 48px; height: 72px; border-radius: 4px; background: var(--surface); border: 1px solid var(--line); object-fit: cover; }
+    .work-cover[hidden] { display: block; visibility: hidden; }
+    .work h3 { margin: 0 0 .1rem; font-size: 1.0625rem; }
+    .work-author { margin: 0; color: var(--muted); font-size: .9375rem; }
+    .work-links { margin: .35rem 0 0; font-size: .9375rem; }
+    .work-links a { display: inline-flex; align-items: center; min-height: 44px; }
+    .shared-actions { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center; margin: 1.25rem 0; }
+    .disclosure { font-size: .875rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+  <header class="site-header wrap">
+    <a class="brand" href="../"><img src="../assets/icon.png" width="36" height="36" alt="">Kitaplarım</a>
+    <nav aria-label="Ana gezinme"><a href="../sss/">SSS</a><a href="../destek/">Destek</a></nav>
+  </header>
+  <main id="icerik" class="wrap" tabindex="-1">
+    <p class="eyebrow">Paylaşılan okuma listesi</p>
+    <h1 id="baslik">Liste açılıyor…</h1>
+    <p id="not" class="shared-note" hidden></p>
+    <p id="tarih" class="shared-deadline" hidden></p>
+    <div id="eylemler" class="shared-actions" hidden>
+      <a id="uygulamada-ac" class="button" href="#">Kitaplarım’da aç</a>
+      <a href="https://apps.apple.com/tr/app/id1504857982">Uygulamayı App Store’da görüntüle <span aria-hidden="true">↗</span></a>
+    </div>
+    <p id="durum" role="status"></p>
+    <ol id="eserler" class="work-list"></ol>
+    <noscript><p>Bu liste bağlantının içinde saklanır ve cihazında çözülür; görmek için JavaScript açık olmalı. Kitaplarım yüklüyse bağlantıyı uygulamada da açabilirsin.</p></noscript>
+    <div id="alt" hidden>
+      <p class="disclosure">Bu sayfa listeyi yalnız senin tarayıcında çözer; liste sunucuya gönderilmez ve kaydedilmez. Kapaklar Open Library’den yüklenir. Amazon bağlantılarını kullanarak alışveriş yaparsan, sana ek bir maliyet olmadan Kitaplarım komisyon kazanabilir.</p>
+      <p class="disclosure">Kitaplarım yüklü değilse: kitap adlarına dokunup Amazon’da bakabilir, listeyi istediğin zaman uygulamayla da açabilirsin. Uygulama ücretsiz başlar.</p>
+    </div>
+  </main>
+  <footer class="site-footer wrap">
+    <nav class="footer-links" aria-label="Diğer sayfalar"><a href="../gizlilik/">Gizlilik</a><a href="../kosullar/">Koşullar</a></nav>
+    <p>Kitaplarım · Kişisel okuma günlüğün.</p>
+  </footer>
+  <script>
+  (function () {
+    var TAG = "kitaplarim-21";
+    var MAX_WORKS = 40, MAX_JSON = 65536;
+    var $ = function (id) { return document.getElementById(id); };
+
+    function fail(message) {
+      $("baslik").textContent = "Liste açılamadı";
+      $("durum").textContent = message;
+    }
+    function str(v, limit, required) {
+      if (typeof v !== "string") return required ? null : "";
+      var s = v.replace(/[\u0000-\u001f\u007f]/g, "").trim();
+      if (s.length > limit || (required && !s)) return null;
+      return s;
+    }
+    function bytesFromPayload(payload) {
+      if (!/^[A-Za-z0-9_-]+$/.test(payload) || payload.length % 4 === 1 || payload.length > MAX_JSON) return null;
+      var b64 = payload.replace(/-/g, "+").replace(/_/g, "/");
+      while (b64.length % 4) b64 += "=";
+      var bin = atob(b64), out = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+      return out;
+    }
+    async function inflate(bytes) {
+      var stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("deflate"));
+      var reader = stream.getReader(), chunks = [], total = 0;
+      for (;;) {
+        var r = await reader.read();
+        if (r.done) break;
+        total += r.value.length;
+        if (total > MAX_JSON) { reader.cancel(); throw new Error("big"); }
+        chunks.push(r.value);
+      }
+      var all = new Uint8Array(total), pos = 0;
+      chunks.forEach(function (c) { all.set(c, pos); pos += c.length; });
+      return new TextDecoder("utf-8", { fatal: true }).decode(all);
+    }
+    function parse(json) {
+      var o = JSON.parse(json);
+      if (!o || o.v !== 1 || !Array.isArray(o.b) || o.b.length > MAX_WORKS) return null;
+      var title = str(o.t, 200, true);
+      if (title === null) return null;
+      var note = o.n == null ? "" : str(o.n, 500, false);
+      var deadline = o.d == null ? "" : str(o.d, 10, false);
+      if (note === null || deadline === null) return null;
+      var works = [];
+      for (var i = 0; i < o.b.length; i++) {
+        var w = o.b[i];
+        if (!Array.isArray(w) || w.length !== 4) return null;
+        var t = str(w[2], 200, true), a = str(w[3], 200, true);
+        if (t === null || a === null) return null;
+        var isbn = typeof w[0] === "string" ? w[0].replace(/[^0-9Xx]/g, "") : "";
+        var asin = typeof w[1] === "string" && /^[A-Z0-9]{10}$/.test(w[1]) ? w[1] : "";
+        works.push({ isbn: /^(\d{9}[\dXx]|\d{13})$/.test(isbn) ? isbn : "", asin: asin, title: t, author: a });
+      }
+      return { title: title, note: note, deadline: deadline, works: works };
+    }
+    function amazonURL(w) {
+      if (w.asin) return "https://www.amazon.com.tr/dp/" + w.asin + "?tag=" + TAG;
+      return "https://www.amazon.com.tr/s?k=" + encodeURIComponent(w.title + " " + w.author) +
+             "&i=stripbooks&tag=" + TAG;
+    }
+    function deadlineText(d) {
+      var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d);
+      if (!m) return "";
+      var date = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+      if (isNaN(date) || date.getUTCMonth() !== +m[2] - 1) return "";
+      return "Son tarih: " + date.toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+    }
+    function render(list, payload) {
+      document.title = list.title + " — Kitaplarım";
+      $("baslik").textContent = list.title;
+      if (list.note) { $("not").textContent = list.note; $("not").hidden = false; }
+      var dt = list.deadline && deadlineText(list.deadline);
+      if (dt) { $("tarih").textContent = dt; $("tarih").hidden = false; }
+      $("uygulamada-ac").href = "readinglist://lists/import#" + payload;
+      $("eylemler").hidden = false;
+      $("alt").hidden = false;
+      $("durum").textContent = list.works.length + " kitap";
+      var ol = $("eserler");
+      list.works.forEach(function (w) {
+        var li = document.createElement("li"); li.className = "work";
+        var img = document.createElement("img"); img.className = "work-cover";
+        img.alt = ""; img.width = 48; img.height = 72;
+        if (w.isbn) {
+          img.loading = "lazy"; img.referrerPolicy = "no-referrer";
+          img.onerror = function () { img.hidden = true; };
+          img.src = "https://covers.openlibrary.org/b/isbn/" + w.isbn + "-S.jpg?default=false";
+        } else { img.hidden = true; }
+        var box = document.createElement("div");
+        var h = document.createElement("h3"); h.textContent = w.title;
+        var p = document.createElement("p"); p.className = "work-author"; p.textContent = w.author;
+        var links = document.createElement("p"); links.className = "work-links";
+        var a = document.createElement("a"); a.href = amazonURL(w); a.rel = "sponsored noopener noreferrer"; a.target = "_blank";
+        a.textContent = "Amazon’da bak";
+        links.appendChild(a);
+        box.appendChild(h); box.appendChild(p); box.appendChild(links);
+        li.appendChild(img); li.appendChild(box); ol.appendChild(li);
+      });
+    }
+    async function main() {
+      var payload = decodeURIComponent((location.hash || "").replace(/^#/, ""));
+      if (!payload) return fail("Bu sayfa bir liste bağlantısıyla açılır. Listeyi paylaşan kişiden bağlantıyı tekrar iste.");
+      if (payload.indexOf("v1.") !== 0) return fail("Bu bağlantı daha yeni bir Kitaplarım sürümüyle oluşturulmuş. Uygulamayı güncelleyip tekrar dene.");
+      if (typeof DecompressionStream === "undefined") return fail("Tarayıcın bu listeyi çözemiyor. Bağlantıyı Kitaplarım uygulamasında aç.");
+      try {
+        var bytes = bytesFromPayload(payload.slice(3));
+        if (!bytes) return fail("Bağlantı eksik ya da bozuk görünüyor. Paylaşan kişiden tekrar iste.");
+        var list = parse(await inflate(bytes));
+        if (!list) return fail("Bağlantıdaki liste okunamadı. Paylaşan kişiden tekrar iste.");
+        render(list, payload);
+      } catch (e) { fail("Bağlantı eksik ya da bozuk görünüyor. Paylaşan kişiden tekrar iste."); }
+    }
+    main();
+  })();
+  </script>
+</body>
+</html>
